@@ -4,6 +4,30 @@ Automatically rejoins a Roblox server when the game window closes or the app sto
 
 ---
 
+## Installation
+
+**1. Install Python:**
+```bash
+pkg update && pkg install python
+```
+
+**2. Install required library:**
+```bash
+pip install requests
+```
+
+**3. Clone the repo:**
+```bash
+git clone https://github.com/daoc-o/RobloxReLink.git
+cd RobloxReLink
+```
+
+**4. Run:**
+```bash
+python autoregion.py
+```
+---
+
 ## How It Works
 
 The script opens a persistent root shell on startup (single `su` call — no repeated permission toasts) and polls the game state every 3 seconds using `pidof`, `ps`, and `dumpsys`.
